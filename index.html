@@ -723,7 +723,8 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="contact" id="contactForm" method="POST" netlify data-netlify="true" onSubmit="submit">
+                        <form name="contact" id="contactForm" method="POST" netlify data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="/success/">
+                            <input class="d-none" name="bot-field">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
